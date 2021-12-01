@@ -1,0 +1,13 @@
+---
+title: "gssg"
+subtitle: "Nov 2021 - Present"
+tags: 
+  - "Go" 
+image: "images/gssg.png"
+urls: 
+ - "https://github.com/rytc/gssg"
+description: >
+  "gssg" is my custom static site generator used for my portfolio site.
+  Originally the site used Hugo, however I found that Hugo is overly complex
+  for my needs. I developed gssg to make content management and site generation
+  simpler.
