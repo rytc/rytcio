@@ -1,1 +1,46 @@
+{{$featuredProj := (index (index .SiteContent "projects") "featuredProjects")}}
+
+
 <p>Hello world!</p>
+
+<h2>Featured Projects</h2>
+
+<div class="container">
+    <div class="row">
+        {{range $featuredProj}}
+            <div class="col-sm-12 col-lg-6  pt-4">
+                <div class="project overflow-hidden">
+                    <a href="https://github.com/rytc/ld49">
+                        <img src="{{.Image}}" alt="{{.Title | noescape}}" class="lg:h-48 md:h-36 object-cover object-center" style="width:100%"/>
+                    </a>
+
+                    <h3>{{.Title | noescape}}</h3> 
+                    <div class="" style="margin-left:1em;">
+                        <h6>{{.Subtitle}}</h6>
+                        {{range .Tags}}
+                            <span class="badge bg-secondary">{{.}}</span> 
+                        {{end}}
+                    </div>
+
+                    <p>{{.Description}}</p> 
+
+                    <div style="width:100%; text-align: center;">
+                        {{range .URLs }}
+                            {{if (eq (.|getdomain) "github")}}
+                                <a href="{{.}}"><img src="images/github.png" alt="GitHub" /></a>
+                            {{end}}
+
+                            {{if (eq (.|getdomain) "ldjam")}} 
+                                <a href="{{.}}"><img src="images/ludum_dare.png" alt="Ludum Dare" /></a>
+                            {{end}}
+                        {{end}}
+                        <!--
+                        <a href="https://www.github.com/rytc/ld49"><img src="/images/github.png" alt="GitHub" /></a>
+                        <a href="https://ldjam.com/events/ludum-dare/49/ld49-uns-table"><img src="/images/ludum_dare.png" alt="Ludum Dare" title="Ludum Dare"></a>
+                        -->
+                    </div>
+                </div>
+            </div>
+{{end}}
+    </div>
+</div>
