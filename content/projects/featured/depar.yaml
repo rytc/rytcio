@@ -6,6 +6,7 @@ tags:
   - "Windows"
   - "Linux"
 image: "/images/ld48_depar_thumb.png"
+imageurl: "/images/ld48_depar_thumb.png"
 urls: 
  - "https://ldjam.com/events/ludum-dare/48/depar-ld48"
  - "https://github.com/rytc/ld48"

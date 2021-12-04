@@ -1,0 +1,15 @@
+---
+title: "openGuildHall"
+subtitle: "2011"
+tags: 
+  - "PHP"
+  - "HTML/CSS"
+  - "MySQL"
+image: "/images/openguildhall.png"
+imageurl: "/images/openguildhall.png"
+urls: 
+  - "https://www.github.com/rytc/openGuildHall"
+description: >
+  A custom content management system for a gaming guild I was apart of in 2011. It was completely 
+  custom written with PHP and MySQL. Featured user accounts, admin management panel, and custom 
+  written forum. Not used in production

@@ -1,43 +1,71 @@
 {{$featuredProj := (index (index .SiteContent "projects") "featuredProjects")}}
+{{$miniProj := (index (index .SiteContent "projects") "miniProjects")}}
+{{$retiredProj := (index (index .SiteContent "projects") "retiredProjects")}}
+
 
 <div style="margin-bottom: 10em; margin-top: 10em;">
     <h1>SOFTWARE ENGINEERING WITH RESPECT</h1> 
     <h5>Join me in bringing empathy and respect to the software industry</h5>
 </div>
-<h2>Featured Projects</h2>
 
+{{define "project-card"}}
+<div class="col-sm-12 col-lg-6  pt-4">
+    <div class="project overflow-hidden">
+        <a href="{{.ImageURL}}">
+            <img src="{{.Image}}" alt="{{.Title | noescape}}" class="lg:h-48 md:h-36 object-cover object-center" style="width:100%"/>
+        </a>
+
+        <h3>{{.Title | noescape}}</h3> 
+        <div class="" style="margin-left:1em;">
+            <h6>{{.Subtitle}}</h6>
+            {{range .Tags}}
+                <span class="badge bg-secondary">{{.}}</span> 
+            {{end}}
+        </div>
+
+        <p>{{.Description}}</p> 
+
+        <div style="width:100%; text-align: center;">
+            {{range .URLs }}
+                {{if (eq (.|getdomain) "github")}}
+                    <a href="{{.}}"><img src="/images/github.png" alt="GitHub" /></a>
+                {{end}}
+
+                {{if (eq (.|getdomain) "ldjam")}} 
+                    <a href="{{.}}"><img src="/images/ludum_dare.png" alt="Ludum Dare" /></a>
+                {{end}}
+            {{end}}
+        </div>
+    </div>
+</div>
+{{end}}
+
+
+
+<h2>Featured Projects</h2>
 <div class="container">
     <div class="row">
         {{range $featuredProj}}
-            <div class="col-sm-12 col-lg-6  pt-4">
-                <div class="project overflow-hidden">
-                    <a href="{{.Image}}">
-                        <img src="{{.Image}}" alt="{{.Title | noescape}}" class="lg:h-48 md:h-36 object-cover object-center" style="width:100%"/>
-                    </a>
-
-                    <h3>{{.Title | noescape}}</h3> 
-                    <div class="" style="margin-left:1em;">
-                        <h6>{{.Subtitle}}</h6>
-                        {{range .Tags}}
-                            <span class="badge bg-secondary">{{.}}</span> 
-                        {{end}}
-                    </div>
-
-                    <p>{{.Description}}</p> 
-
-                    <div style="width:100%; text-align: center;">
-                        {{range .URLs }}
-                            {{if (eq (.|getdomain) "github")}}
-                                <a href="{{.}}"><img src="/images/github.png" alt="GitHub" /></a>
-                            {{end}}
-
-                            {{if (eq (.|getdomain) "ldjam")}} 
-                                <a href="{{.}}"><img src="/images/ludum_dare.png" alt="Ludum Dare" /></a>
-                            {{end}}
-                        {{end}}
-                    </div>
-                </div>
-            </div>
+            {{template "project-card" .}}    
         {{end}}
     </div>
+</div>
+
+<h2>Mini Projects</h2>
+<div class="container">
+    <div class="row">
+        {{range $miniProj}}
+            {{template "project-card" .}}
+        {{end}}
+    </div>
+</div>
+
+<h2>Retired Projects</h2>
+<div class="container">
+    <div class="row">
+        {{range $retiredProj}}
+            {{template "project-card" .}}
+        {{end}}
+    </div>
+
 </div>

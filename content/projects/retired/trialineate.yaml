@@ -1,0 +1,12 @@
+---
+title: "Trialineate"
+subtitle: "Dec 2010"
+tags: 
+  - "Objective-C" 
+image: "/images/Trialineate_thumb.png"
+imageurl: "/images/Trialineate_01.png"
+urls: 
+description: >
+  Wrote and published a Tic-Tac-Toe iOS game. The game included on-device multiplayer, AI, and local 
+  multiplayer over bluetooth.
+

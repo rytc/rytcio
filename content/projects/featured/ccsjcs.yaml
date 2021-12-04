@@ -8,6 +8,7 @@ tags:
   - "Javascript"
   - "MySQL"
 image: "/images/ccsjcsecurity.png"
+imageurl: "/images/ccsjcsecurity.png"
 urls: 
 description: >
   A web application for CCSJC's security team so that they can manage the schedule for 
