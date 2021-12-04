@@ -1,8 +1,9 @@
 {{$featuredProj := (index (index .SiteContent "projects") "featuredProjects")}}
 
-
-<p>Hello world!</p>
-
+<div style="margin-bottom: 10em; margin-top: 10em;">
+    <h1>SOFTWARE ENGINEERING WITH RESPECT</h1> 
+    <h5>Join me in bringing empathy and respect to the software industry</h5>
+</div>
 <h2>Featured Projects</h2>
 
 <div class="container">
@@ -10,7 +11,7 @@
         {{range $featuredProj}}
             <div class="col-sm-12 col-lg-6  pt-4">
                 <div class="project overflow-hidden">
-                    <a href="https://github.com/rytc/ld49">
+                    <a href="{{.Image}}">
                         <img src="{{.Image}}" alt="{{.Title | noescape}}" class="lg:h-48 md:h-36 object-cover object-center" style="width:100%"/>
                     </a>
 
@@ -27,11 +28,11 @@
                     <div style="width:100%; text-align: center;">
                         {{range .URLs }}
                             {{if (eq (.|getdomain) "github")}}
-                                <a href="{{.}}"><img src="images/github.png" alt="GitHub" /></a>
+                                <a href="{{.}}"><img src="/images/github.png" alt="GitHub" /></a>
                             {{end}}
 
                             {{if (eq (.|getdomain) "ldjam")}} 
-                                <a href="{{.}}"><img src="images/ludum_dare.png" alt="Ludum Dare" /></a>
+                                <a href="{{.}}"><img src="/images/ludum_dare.png" alt="Ludum Dare" /></a>
                             {{end}}
                         {{end}}
                     </div>
