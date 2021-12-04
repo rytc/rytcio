@@ -27,7 +27,11 @@
 
         <div style="width:100%; text-align: center;">
             {{range .URLs }}
-                {{if (eq (.|getdomain) "github")}}
+                {{if and (eq (.|getdomain) "github") (eq (.|gettld) "io")}}
+                    <a href="{{.}}"><img src="/images/demo.png" alt="GitHub" /></a>
+                {{end}}
+
+                {{if and (eq (.|getdomain) "github") (eq (.|gettld) "com")}}
                     <a href="{{.}}"><img src="/images/github.png" alt="GitHub" /></a>
                 {{end}}
 

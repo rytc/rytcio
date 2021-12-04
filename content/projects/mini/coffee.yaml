@@ -1,0 +1,14 @@
+---
+title: "Favorite Coffee"
+subtitle: "Nov 2021"
+tags: 
+  - "HTML/CSS"
+  - "Bootstrap"
+image: "/images/coffee_homework.png"
+imageurl: "/images/coffee_homework.png"
+urls: 
+  - "https://www.github.com/rytc/Coffee"
+  - "https://rytc.github.io/Coffee/"
+description: >
+  One of my homework assignments was to create a responsive design with Bootstrap about 
+  my favorite coffee.

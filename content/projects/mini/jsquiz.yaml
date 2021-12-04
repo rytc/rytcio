@@ -1,0 +1,15 @@
+---
+title: "JSQuiz"
+subtitle: "Nov 2021"
+tags: 
+  - "Javascript"
+  - "HTML/CSS"
+image: "/images/jsquiz.png"
+imageurl: "/images/jsquiz.png"
+urls: 
+  - "https://www.github.com/rytc/jsquiz"
+  - "https://rytc.github.io/JSQuiz/"
+description: >
+  A simple quiz game about Javascript. Answer all of the questions in 60 seconds, 
+  the wrong answer subtracts 10 seconds from the timer. High scores are saved in 
+  local storage.
