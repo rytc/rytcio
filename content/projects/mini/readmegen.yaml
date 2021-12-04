@@ -1,0 +1,12 @@
+---
+title: "READMEgen"
+subtitle: "Dec 2021"
+tags: 
+  - "NodeJS"
+image: "/images/readmegen.png"
+imageurl: "/images/readmegen.png"
+urls: 
+  - "https://www.github.com/rytc/READMEgen"
+description: >
+  A simple readme generator written with NodeJS using Axios 
+  and Inquirer. 
