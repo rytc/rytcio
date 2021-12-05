@@ -6,7 +6,7 @@ tags:
 image: "/images/gssg.png"
 imageurl: "/images/gssg.png"
 urls: 
- - "https://github.com/rytc/gssg"
+ - "github:https://github.com/rytc/gssg"
 description: >
   "gssg" is my custom static site generator used for my portfolio site.
   Originally the site used Hugo, however I found that Hugo is overly complex

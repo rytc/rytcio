@@ -7,8 +7,8 @@ tags:
 image: "/images/coffee_homework.png"
 imageurl: "/images/coffee_homework.png"
 urls: 
-  - "https://www.github.com/rytc/Coffee"
-  - "https://rytc.github.io/Coffee/"
+  - "github:https://www.github.com/rytc/Coffee"
+  - "demo:https://rytc.github.io/Coffee/"
 description: >
   One of my homework assignments was to create a responsive design with Bootstrap about 
   my favorite coffee.

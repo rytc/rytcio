@@ -85,3 +85,12 @@ li.blog-item {
 .bg-secondary {
     background-color: #586e75 !important;
 }
+
+.proj-link {
+    margin-right: 0.5em;
+}
+
+.proj-link-img {
+    padding-right: 0.25em;
+    height: 25px;
+}

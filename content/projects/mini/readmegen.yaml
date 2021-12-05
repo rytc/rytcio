@@ -6,7 +6,8 @@ tags:
 image: "/images/readmegen.png"
 imageurl: "/images/readmegen.png"
 urls: 
-  - "https://www.github.com/rytc/READMEgen"
+  - "github:https://www.github.com/rytc/READMEgen"
+  - "youtube:https://www.youtube.com/watch?v=2DLg-6Hrh7M"
 description: >
   A simple readme generator written with NodeJS using Axios 
   and Inquirer. 

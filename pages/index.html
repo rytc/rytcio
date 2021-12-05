@@ -25,21 +25,30 @@
 
         <p>{{.Description}}</p> 
 
-        <div style="width:100%; text-align: center;">
+        <ul class="nav justify-content-center">
             {{range .URLs }}
-                {{if and (eq (.|getdomain) "github") (eq (.|gettld) "io")}}
-                    <a href="{{.}}"><img src="/images/demo.png" alt="GitHub" /></a>
+                {{if (eq (.|geturltag) "demo")}}
+                    <li class="nav-item mr-1 proj-link"><a href="{{.|removeurltag}}"><img src="/images/demo.png" alt="GitHub" class="proj-link-img" />Live Demo</a></li>
                 {{end}}
 
-                {{if and (eq (.|getdomain) "github") (eq (.|gettld) "com")}}
-                    <a href="{{.}}"><img src="/images/github.png" alt="GitHub" /></a>
+                {{if (eq (.|geturltag) "github")}}
+                    <li class="nav-item proj-link"><a href="{{.|removeurltag}}"><img src="/images/github.png" alt="GitHub" class="proj-link-img" />GitHub</a></li>
                 {{end}}
 
-                {{if (eq (.|getdomain) "ldjam")}} 
-                    <a href="{{.}}"><img src="/images/ludum_dare.png" alt="Ludum Dare" /></a>
+                {{if (eq (.|geturltag) "ldjam")}} 
+                    <li class="nav-item proj-link"><a href="{{.|removeurltag}}"><img src="/images/ludum_dare.png" alt="Ludum Dare" class="proj-link-img" />Ludum Dare</a></li>
                 {{end}}
+
+                {{if (eq (.|geturltag) "youtube")}}
+                    <li class="nav-item proj-link"><a href="{{.|removeurltag}}"><img src="/images/youtube.png" alt="YouTube" class="proj-link-img" />YouTube</a></li>
+                {{end}}
+
+                {{if (eq (.|geturltag) "download")}}
+                    <li class="nav-item proj-link"><a href="{{.|removeurltag}}"><img src="/images/download.png" alt="Download" class="proj-link-img" />Download</a></li>
+                {{end}}
+
             {{end}}
-        </div>
+        </ul>
     </div>
 </div>
 {{end}}
