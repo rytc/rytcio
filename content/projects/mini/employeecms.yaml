@@ -1,0 +1,19 @@
+---
+title: "EmployeeCMS"
+subtitle: "Dec 2021"
+date: 2021-12-17
+tags: 
+  - "Javascript" 
+  - "NodeJS"
+  - "MySQL"
+image: "/images/employeecms.png"
+imageurl: "/images/employeecms.png"
+urls: 
+ - "github:https://github.com/rytc/EmployeeCMS"
+ - "youtube:https://www.youtube.com/watch?v=YyWfYeO23YA"
+description: >
+  This is a small CLI CRUD program done for homework. It is 
+  an employee management program that allows for viewing, creation,
+  update, and deletion of Departments, Roles, and Employees. The main
+  point of this project was to practice complex SQL queries and using a 
+  promise-based design to handle menues and database queries.

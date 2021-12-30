@@ -1,0 +1,19 @@
+---
+title: "Techpress"
+subtitle: "Dec 2021"
+date: 2021-12-29
+tags: 
+  - "Javascript"
+  - "Node"
+  - "Express"
+  - "MySQL"
+  - "Sequelize"
+  - "Passport"
+  - "Handlebars"
+  - "Bootstrap"
+image: "/images/techpress.png"
+imageurl: "/images/techpress.png"
+urls: 
+ - "github:https://github.com/rytc/techpress"
+description: >
+  Homework to develop and deploy a tech blog to Heroku.
