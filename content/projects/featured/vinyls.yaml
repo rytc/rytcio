@@ -1,0 +1,18 @@
+---
+title: "vinyls.rytc.io"
+subtitle: "Jan 2022"
+date: 2022-01-08
+tags: 
+  - "Javascript" 
+  - "NodeJS"
+  - "React"
+  - "Express"
+  - "MongoDB"
+  - "Mongoose"
+image: "/images/vinyls.png"
+imageurl: "/images/vinyls.png"
+urls: 
+ - "demo:http://vinyls.rytc.io"
+description: >
+    A website featuring a list of my vinyl record collection. Most of the record data is pulled from Discogs. The album title, artist, UPC, album art URL, UPC and
+    record ID are stored in MongoDB.

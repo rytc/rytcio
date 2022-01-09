@@ -4,14 +4,15 @@ subtitle: "Jan 2022"
 date: 2022-01-05
 tags: 
   - "Javascript" 
+  - "MySQL"
   - "NodeJS"
   - "Express"
-  - "MySQL"
+  - "Passport"
+  - "Sequelize"
 image: "/images/sunodeku.png"
 imageurl: "/images/sunodeku.png"
 urls: 
- - "github:https://github.com/Abraham-Solis/suNodeKu/blob/ryan/lib/sudoku.js"
+ - "github:https://github.com/Abraham-Solis/suNodeKu"
 description: >
-  SuNodeKu was our second group project for Full Stack boot camp. This project was about utilizing a MySQL backend to create an API. It is a Sudoku game
-  that uses RESTful API to play Sudoku as well as provide leaderboard statistics. My main contribution was writing a compressor/decompressor for the game data 
-  when storing the data in MySQL. This was done because Heroku's free-tier MySQL database has limited space.
+  SuNodeKu was our second group project for Full Stack boot camp. This project was about utilizing a MySQL database to create a RESTful API. It is a Sudoku game
+  that uses API calls to play Sudoku, features leaderboards and a forum to ask for help on puzzles. My main contribution was the Sudoku game. 

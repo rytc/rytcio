@@ -9,7 +9,7 @@ tags:
 image: "/images/petfinder.png"
 imageurl: "/images/petfinder.png"
 urls: 
- - "github:https://github.com/hadisafari77/Group-Project-Dogs/blob/main/assets/api.js"
+ - "github:https://github.com/hadisafari77/Group-Project-Dogs"
 description: >
   Pet Rescue Finder was our first group project for the Full Stack Development bootcamp intended to develop a site that consumes RESTful APIs. My main contribution was creating
   a wrapper for Petfinder.com API to handle OAuth authentication and handle expiring keys. The wrapper provided a simple 
