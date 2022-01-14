@@ -1,0 +1,19 @@
+---
+title: "READMEgen 2.0"
+subtitle: "Jan 2022"
+date: 2022-01-12
+tags: 
+  - "Javascript"
+  - "NodeJS"
+  - "webpack"
+  - "SASS"
+  - "Bootstrap"
+image: "/images/readmegen2.png"
+imageurl: "/images/readmegen2.png"
+urls: 
+  - "demo:https://rytc.github.io/READMEgen2/"
+  - "github:https://www.github.com/rytc/READMEgen2"
+
+description: >
+  This was a project done as an improvement to my README Generator homework to learn webpack and SASS. 
+  Provides live markdown rendering preview and file download.

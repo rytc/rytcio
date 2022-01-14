@@ -5,8 +5,8 @@ date: 2021-10-02
 tags: 
   - "C++" 
   - "Windows"
-image: "https://github.com/rytc/ld49/raw/main/screenshots/ld49_0.png"
-imageurl: "https://github.com/rytc/ld49/raw/main/screenshots/ld49_0.png"
+image: "/images/ld49_0.png"
+imageurl: "/images/ld49_0.png"
 urls: 
  - "ldjam:https://ldjam.com/events/ludum-dare/49/ld49-uns-table"
  - "github:https://github.com/rytc/ld49"
