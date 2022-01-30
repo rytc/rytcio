@@ -1,0 +1,111 @@
+---
+title: "vinyls.rytc.io"
+subtitle: "Jan 2022"
+date: 2022-01-08
+tags: 
+  - "Javascript" 
+  - "NodeJS"
+  - "React"
+  - "Express"
+  - "MongoDB"
+  - "Mongoose"
+image: "/images/vinyls.png"
+imageurl: "/images/vinyls.png"
+urls: 
+ - "github:https://github.com/rytc/vinyls"
+ - "demo:http://vinyls.rytc.io"
+description: >
+    A website featuring a list of my vinyl record collection. Most of the record data is pulled from Discogs. The album title, artist, UPC, album art URL and
+    record ID are stored in MongoDB.
+    
+---
+title: "SuNodeKu"
+subtitle: "Jan 2022"
+date: 2022-01-05
+tags: 
+  - "Javascript" 
+  - "MySQL"
+  - "NodeJS"
+  - "Express"
+  - "Passport"
+  - "Sequelize"
+image: "/images/sunodeku.png"
+imageurl: "/images/sunodeku.png"
+urls: 
+ - "github:https://github.com/Abraham-Solis/suNodeKu"
+ - "demo:https://sunodeku.herokuapp.com/"
+description: >
+  SuNodeKu was our second group project for Full Stack boot camp. This project was about utilizing a MySQL database to create a RESTful API. It is a Sudoku game
+  that uses API calls to play Sudoku, features leaderboards and a forum to ask for help on puzzles. My main contribution was the Sudoku game. 
+
+---
+title: "Uns' Table"
+subtitle: "Oct 2021 - Ludum Dare 48"
+date: 2021-10-02
+tags: 
+  - "C++" 
+  - "Windows"
+image: "/images/ld49_0.png"
+imageurl: "/images/ld49_0.png"
+urls: 
+ - "ldjam:https://ldjam.com/events/ludum-dare/49/ld49-uns-table"
+ - "github:https://github.com/rytc/ld49"
+ - "download:https://github.com/rytc/ld49/releases/tag/v1.0"
+description: >
+  Ludum Dare 49 game jam entry, where the goal is to make a game from scratch in 48 hours. The theme for the jam was "unstable". Un's Table is a game about an 
+  unscrupulous merchant who orders you to fight monsters and bring him the specific loot he's asking for.
+
+---
+title: "gssg"
+subtitle: "Nov 2021 - Present"
+date: 2021-12-01
+tags: 
+  - "Go" 
+image: "/images/gssg.png"
+imageurl: "/images/gssg.png"
+urls: 
+ - "github:https://github.com/rytc/gssg"
+description: >
+  "gssg" is my custom static site generator used for my portfolio site.
+  Originally the site used Hugo, however I found that Hugo is overly complex
+  for my needs. I developed gssg to make content management and site generation
+  simpler.
+
+---
+title: "Depar"
+subtitle: "April 2021 - Ludum Dare 48"
+date: 2021-04-23
+tags: 
+  - "C++" 
+  - "Windows"
+  - "Linux"
+image: "/images/ld48_depar_thumb.png"
+imageurl: "/images/ld48_depar_thumb.png"
+urls: 
+ - "ldjam:https://ldjam.com/events/ludum-dare/48/depar-ld48"
+ - "github:https://github.com/rytc/ld48"
+ - "download:https://github.com/rytc/ld48/releases/tag/1.0"
+description: >
+  Ludum Dare 48 game jam entry, where the goal is to make a game from scratch in 48 hours. The theme of the jam was "despair", 
+  and the game is a futuristic dystopia in the theme of Dune/Cyberpunk. It is a simple platform game that I made that mostly focused 
+  on getting the feel/environment right.
+
+
+---
+title: "Security Schedule Management Site"
+subtitle: "Dec 2018 - Dec 2021"
+date: 2021-08-01
+tags: 
+  - "HTML" 
+  - "CSS"
+  - "PHP"
+  - "Javascript"
+  - "MySQL"
+image: "/images/ccsjcsecurity.png"
+imageurl: "/images/ccsjcsecurity.png"
+urls: 
+description: >
+  A web application for CCSJC's security team so that they can manage the schedule for 
+  services and events. Private application currently in production use.
+
+

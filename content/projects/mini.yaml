@@ -1,0 +1,49 @@
+---
+title: "READMEgen 2.0"
+subtitle: "Jan 2022"
+date: 2022-01-12
+tags: 
+  - "Javascript"
+  - "NodeJS"
+  - "webpack"
+  - "SASS"
+  - "Bootstrap"
+image: "/images/readmegen2.png"
+imageurl: "/images/readmegen2.png"
+urls: 
+  - "demo:https://rytc.github.io/READMEgen2/"
+  - "github:https://www.github.com/rytc/READMEgen2"
+
+description: >
+  This was a project done as an improvement to my README Generator homework to learn webpack and SASS. 
+  Provides live markdown rendering preview and file download.
+  
+---
+title: "Advent of Code 2021"
+subtitle: "Dec 2021"
+date: 2021-12-14
+tags: 
+  - "C++" 
+image: "/images/aoc2021.png"
+imageurl: "/images/aoc2021.png"
+urls: 
+ - "github:https://github.com/rytc/advent-of-code-2021"
+description: >
+  December 2021 adventofcode.com challenge
+
+---
+title: "Pet Rescue Finder"
+subtitle: "Dec 2021"
+date: 2021-12-1
+tags: 
+  - "Javascript" 
+  - "HTML"
+  - "CSS"
+image: "/images/petfinder.png"
+imageurl: "/images/petfinder.png"
+urls: 
+ - "github:https://github.com/hadisafari77/Group-Project-Dogs"
+description: >
+  Pet Rescue Finder was our first group project for the Full Stack Development bootcamp intended to develop a site that consumes RESTful APIs. My main contribution was creating
+  a wrapper for Petfinder.com API to handle OAuth authentication and handle expiring keys. The wrapper provided a simple 
+  function call to interact with the API on the front end.

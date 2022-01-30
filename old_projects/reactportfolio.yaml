@@ -1,0 +1,13 @@
+---
+title: "React Portfolio"
+subtitle: "Jan 2022"
+date: 2022-01-14
+tags: 
+  - "ReactJS" 
+image: "/images/reactportfolio.png"
+imageurl: "/images/reactportfolio.png"
+urls: 
+ - "github:https://github.com/rytc/ReactPortfolio"
+ - "demo:https://rytc.github.io/ReactPortfolio"
+description: >
+  A React version of my portfolio deployed to Github pages
