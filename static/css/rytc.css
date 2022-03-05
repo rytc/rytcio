@@ -123,5 +123,12 @@ li.blog-item sub {
     text-decoration: underline;
 }
 
+.nav-item a img {
+    width: auto;
+}
 
+img {
+    max-width:100%;
+    height:auto;
+}
 
