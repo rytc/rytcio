@@ -1,0 +1,13 @@
+
+{{$blogPosts := (index .SiteContent "blog")}}
+
+<div class="pt-4">
+    <ul class="blog-list">
+        {{range $blogPosts}}
+            <li class="blog-item">
+                <a href="blog/{{.Permalink}}">{{.Title}}</a><br />
+                <sub>Posted on {{.Date.Format "Jan 02 2006"}}</sub> 
+            </li>
+        {{end}}
+    </ul>
+</div>

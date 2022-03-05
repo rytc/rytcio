@@ -31,19 +31,3 @@ urls:
 description: >
   December 2021 adventofcode.com challenge
 
----
-title: "Pet Rescue Finder"
-subtitle: "Dec 2021"
-date: 2021-12-1
-tags: 
-  - "Javascript" 
-  - "HTML"
-  - "CSS"
-image: "/images/petfinder.png"
-imageurl: "/images/petfinder.png"
-urls: 
- - "github:https://github.com/hadisafari77/Group-Project-Dogs"
-description: >
-  Pet Rescue Finder was our first group project for the Full Stack Development bootcamp intended to develop a site that consumes RESTful APIs. My main contribution was creating
-  a wrapper for Petfinder.com API to handle OAuth authentication and handle expiring keys. The wrapper provided a simple 
-  function call to interact with the API on the front end.

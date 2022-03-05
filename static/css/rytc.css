@@ -66,7 +66,22 @@ ul.blog-list{
 
 li.blog-item {
     background-color: #002b36;
+    display: block;
     color: #839496;
+    padding: 1em;
+    list-style-type: none;
+    border-radius: 8px;
+    padding-bottom: 1em;
+    filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.4));
+
+}
+
+li.blog-item a {
+    font-size: 16pt;
+}
+
+li.blog-item sub {
+    display: inline-block;
 }
 
 .icon_medium {
@@ -94,3 +109,19 @@ li.blog-item {
     padding-right: 0.25em;
     height: 25px;
 }
+
+.nav-link {
+    color: #FFF;
+    font-size: 14pt;
+}
+
+.nav-link:visited {
+    color: #FFF;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+

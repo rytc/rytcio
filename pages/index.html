@@ -3,13 +3,8 @@
 {{$retiredProj := (index (index .SiteContent "projects") "retiredProjects")}}
 
 
-<div style="margin-bottom: 10em; margin-top: 10em;">
-    <h1>SOFTWARE ENGINEERING WITH RESPECT</h1> 
-    <h5>Join me in bringing empathy and respect to the software industry</h5>
-</div>
-
 {{define "project-card"}}
-<div class="col-sm-12 col-lg-6  pt-4">
+<div class="col-sm-12 col-lg-4  pt-4">
     <div class="project overflow-hidden">
         <a href="{{.ImageURL}}">
             <img src="{{.Image}}" alt="{{.Title | noescape}}" class="lg:h-48 md:h-36 object-cover object-center" style="width:100%"/>

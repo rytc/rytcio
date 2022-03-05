@@ -3,12 +3,10 @@ title: "vinyls.rytc.io"
 subtitle: "Jan 2022"
 date: 2022-01-08
 tags: 
-  - "Javascript" 
-  - "NodeJS"
-  - "React"
+  - "MongoDB" 
   - "Express"
-  - "MongoDB"
-  - "Mongoose"
+  - "React"
+  - "NodeJS"
 image: "/images/vinyls.png"
 imageurl: "/images/vinyls.png"
 urls: 
@@ -17,26 +15,23 @@ urls:
 description: >
     A website featuring a list of my vinyl record collection. Most of the record data is pulled from Discogs. The album title, artist, UPC, album art URL and
     record ID are stored in MongoDB.
-    
+
 ---
-title: "SuNodeKu"
-subtitle: "Jan 2022"
-date: 2022-01-05
+title: "gssg"
+subtitle: "Nov 2021 - Present"
+date: 2021-12-01
 tags: 
-  - "Javascript" 
-  - "MySQL"
-  - "NodeJS"
-  - "Express"
-  - "Passport"
-  - "Sequelize"
-image: "/images/sunodeku.png"
-imageurl: "/images/sunodeku.png"
+  - "Go" 
+image: "/images/gssg.png"
+imageurl: "/images/gssg.png"
 urls: 
- - "github:https://github.com/Abraham-Solis/suNodeKu"
- - "demo:https://sunodeku.herokuapp.com/"
+ - "github:https://github.com/rytc/gssg"
 description: >
-  SuNodeKu was our second group project for Full Stack boot camp. This project was about utilizing a MySQL database to create a RESTful API. It is a Sudoku game
-  that uses API calls to play Sudoku, features leaderboards and a forum to ask for help on puzzles. My main contribution was the Sudoku game. 
+  "gssg" is my custom static site generator used for my portfolio site.
+  Originally the site used Hugo, however I found that Hugo is overly complex
+  for my needs. I developed gssg to make content management and site generation
+  simpler.
+
 
 ---
 title: "Uns' Table"
@@ -56,20 +51,22 @@ description: >
   unscrupulous merchant who orders you to fight monsters and bring him the specific loot he's asking for.
 
 ---
-title: "gssg"
-subtitle: "Nov 2021 - Present"
-date: 2021-12-01
+title: "SuNodeKu"
+subtitle: "Jan 2022"
+date: 2022-01-05
 tags: 
-  - "Go" 
-image: "/images/gssg.png"
-imageurl: "/images/gssg.png"
+  - "Javascript" 
+  - "MySQL"
+  - "NodeJS"
+image: "/images/sunodeku.png"
+imageurl: "/images/sunodeku.png"
 urls: 
- - "github:https://github.com/rytc/gssg"
+ - "github:https://github.com/Abraham-Solis/suNodeKu"
+ - "demo:https://sunodeku.herokuapp.com/"
 description: >
-  "gssg" is my custom static site generator used for my portfolio site.
-  Originally the site used Hugo, however I found that Hugo is overly complex
-  for my needs. I developed gssg to make content management and site generation
-  simpler.
+  SuNodeKu was our second group project for Full Stack boot camp. This project was about utilizing a MySQL database to create a RESTful API. It is a Sudoku game
+  that uses API calls to play Sudoku, features leaderboards and a forum to ask for help on puzzles. My main contribution was the Sudoku game. 
+
 
 ---
 title: "Depar"

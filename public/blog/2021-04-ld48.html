@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rytc.io</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/rytc.css">
+
+    <meta name="description" content="Portfolio for Ryan Capote. Software engineer and full stack developer."> 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg shadow pt-4">
+        <div class="container">
+            <a class="text-white mb-3 fs-1 text-decoration-none" href="/"> 
+                <span class="gt">&gt;&nbsp;</span>rytc.io
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon toggle-button">☰</span>
+            </button>
+            <div class="collapse navbar-collapse" style="flex-direction: row-reverse;" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/links.html">Things I Like</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/RyanCapote_Resume.pdf">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/rytc"><img src="/images/github.png"/></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/ryan-capote-52a83622/"><img src="/images/linkedin.png"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        
+<div class="pt-4">
+    <h1> Ludum Dare 48 Postmortem</h1>
+    <p class="timestamp">Posted on: Apr 27 2021</p>
+    <hr />
+    <p>Ludum Dare 48 was this past weekend, and I decided to jump in at the last minute. I had attempted a Ludum Dare jam many years ago, but I never submitted it because it was barely a game when the jam ended. That jam failed due to spending an inordinate amount of time making a level editor and accompanying UI rather than making the game.</p>
+
+<p>I had decided to go into this event with the intention of making something that explored a sci-fi setting, then try to mix in the official jam theme.</p>
+
+<ul>
+<li><a href="https://ldjam.com/events/ludum-dare/48/depar-ld48">LD48 - Depar (ldjam.com)</a></li>
+</ul>
+
+<h2>Tech</h2>
+
+<p>For this project I decided to stick with C++ since that is what I&rsquo;m most confortable with. For graphics and sound, I decided to try out using <a href="www.raylib.com">RayLib</a>. For compiling, I stuck with the simple and effective &ldquo;unity build&rdquo; where the whole game is compiled in 1 translation unit via a simple <code>build.sh</code> or <code>build.bat</code>. The game was written on Linux, and it only took about 15-30 minutes to get it ported to Windows once I was done.</p>
+
+<ul>
+<li><a href="https://github.com/rytc/ld48">Source code (Github)</a></li>
+</ul>
+
+<h2>Setting</h2>
+
+<p>I recently gained an interest into the whole dystopia/cyberpunk/high-low tech sci-fi trope. For this game I made an environment that was a combination of under-developed desert village with mud buildings combined with high technology like pnumatic doors, computer displays, radio towers, etc. While I didn&rsquo;t create an expansive environment, it was fun to explore this setting.</p>
+
+<p><img src="/images/ld48_depar_thumb.png" alt="LD48 Depar Albumart" /></p>
+
+<h2>Gameplay</h2>
+
+<p>I&rsquo;ll admit, I fell short on gameplay. The theme being &ldquo;Deeper and Deeper&rdquo;, I chose to do the obvious gameplay trope of continuously exploring &ldquo;deeper&rdquo; levels of increasing difficulty. Basically some tunnel system under the desert village was infested with robots that needed to be cleaned up.</p>
+
+<p>Where I fell short here was two fold. Firstly the tunnel system was put together pretty hastily. Not much art was done, and could have been made more to look more like a tunnel system with changing art on different art. Secondly, I had only developed two types of &ldquo;enemies&rdquo; that didn&rsquo;t fight back. The game could have been way better if a challenge was introduced by having the baddies fight back.</p>
+
+<p>The ending was also hastily put together with a small attempt at a humorous dialog to close off the story.</p>
+
+<h2>Code</h2>
+
+<p>One thing I wanted to play with is a different way to handle entities. Instead of splitting the various types of entities, such as door, lootbox, NPC, etc. into separate structs&hellip;all entities were composed from a single Entity type and the differing functionality was implemented by setting values or flags.</p>
+
+<p>I&rsquo;d say it was a pretty successful experiment as I was able to compose new entities as the ideas came to mind without having to do much work or spend time fixing bugs. The point of doing this was to try and make the entities all share the same code path, reducing development time and bugs. Where this technique broke down was when entities ended up needing specific functionality. For example, both a door and a lootbox get the <code>INTERACTABLE</code> flag set, however they want to do different things when interacted with. The door wants to open and change it&rsquo;s collision rectangle, whereas the lootbox wants to spawn an item. So while entities can&rsquo;t entirely share a single code path, it was really nice being able to specify logic only when needed and not having to specify all the logic for every entity type.</p>
+
+<p>(Yes, inheritance is commonly used to do this same thing however that comes with it&rsquo;s own costs and tradeoffs)</p>
+
+<h2>Discovery</h2>
+
+<p>One neat thing about this experience was the idea development that occured. The game started out as just colored rectangles where I implemented the platforming mechanics. After that it was just a matter of letting the ideas flow. Wanted to do a desert motif, so I did the art for that. Then the idea of having a robot at the start, and did that&hellip;then the loot box and a town behind a lock door, then being able to enter the building, etc. As one idea was gained and implemented, the next idea flowed.</p>
+
+<p>I think this really taught me that not everything needs to be fleshed out before hand. Being able to easily and quickly experiment adding things make this process easy and flow well. That&rsquo;s one of the main benefits of writing in C++ and using the unity build for this project. Compilation time was less than a second, so I could quickly add something and test it with a very short turnaround time. This is something that is really lost in modern-day game dev, and is likely the cause of the lack of cool and innovative games.</p>
+
+<h2>Overall</h2>
+
+<p>I consider the jam a success just for the fact that the game has most of the things the make up a game: the setting, some art, some gameplay, some story, a beginning and end. While it could be much improved in the gameplay and fun factor, the attempt succeeded in doing what I wanted to get out of it and that was just making a playable game and shipping it.</p>
+
+</div>
+
+    </main>
+
+    <footer class="container mt-5 border-top">
+        <p class="text-secondary">&copy; 2020-2021 Ryan Capote - Built with <a href="https://github.com/rytc/gssg">gssg</a></p>
+    </footer>
+
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
